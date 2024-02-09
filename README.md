@@ -9,7 +9,7 @@ run:
 <br>
 pick the dirve you want to convert from 512 to 4096 <br>
 `wdckit format -b 4096 --fastformat disk1` # Replace disk1 with your disk from the output on `wdckit s` <br>
-
+<br>
 ## Seagate 512 to 4096 <br>
 Download SeaChest tools: SeaChest_Info_x64_windows.exe -s <br> 
 https://github.com/Seagate/ToolBin/blob/master/SeaChest/Info/v2.5.0/Windows/SeaChest_Info_x64_windows.exe <br>

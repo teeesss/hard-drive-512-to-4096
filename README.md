@@ -9,7 +9,7 @@ run:
 <br>
 pick the dirve you want to convert from 512 to 4096 <br>
 `wdckit format -b 4096 --fastformat disk1` # Replace disk1 with your disk from the output on `wdckit s` <br>
-<br>
+
 ## Hugo - Is another option you can try <br>
 Install Hugo <br>
 Locate hugo.exe `C:\Program Files\WDC\HUGO\bin\hugo.exe` <br>
@@ -19,7 +19,7 @@ run: <br>
 next: <br>
 `hugo format -g \\.\PhysicalDrive1 -b 4096 --fastformat -n max` <br>
 FYI. a failed format doesn't necessarily mean the new sectors did not update to 4096 <br>
-<br>
+
 ## WD Format Utility, yet another option to try <br>
 `https://downloads.wdc.com/wdapp/WD_Quick_Formatter_2.0.0.65.zip` <br>
 `https://support-en.wd.com/app/answers/detailweb/a_id/16241` <br>
@@ -33,3 +33,33 @@ run: <br>
 `SeaChest_Info_x64_windows.exe -s`  # Will show output of drives <br>
 <br>
 `SeaChest_Lite_x64_windows.exe -d PD2 --setSectorSize 4096 --confirm this-will-erase-data` # Will try to convert from 512 to 4096 <br>
+<br>
+## Other Commands tools:
+hdparms:
+Linux tool allowing users to view and change the SATA/IDE device parameters. Stands for "Hard Disk Parameters". 
+`Examples (for first ATA/SATA drive):`
+`hdparm -I hda              Show disk identity, features, and current settings`
+`hdparm -I scd0             Same for first CD-ROM`
+`hdparm -M 128 hda          Set acoustic management to 'quiet'`
+`hdparm -M 254 hda          Set acoustic management to 'fast'`
+`hdparm -t hda              Perform disk read timings`
+`hdparm -T hda              Perform cached read timings`
+`hdparm -y hda              Set disk to standby mode`
+`hdparm --security-freeze hda    Freeze security settings`
+`Use 'hdb', 'hdc',... for second, third, ... ATA/SATA drive.`
+`See man page (hdparm.8.*) for further info.`
+
+smartctl:
+Linux tool used to control/monitor storage using (SMART) system. `smartctl [option] /dev/drive` <br>
+See if your hard disk supports S.M.A.R.T.:
+`sudo smartctl -i /dev/sdc`
+The following data should be present in the output:
+`SMART support is: Available - device has SMART capability.`
+`SMART support is: Enabled`
+In case SMART support is available, but for some reason is not activated, try using `sudo smartctl -s on /dev/sdc` to assist with activation.
+Viewing the SMART Attributes
+To display the SMART attributes of the hard disk, perform the following command:
+`sudo smartctl -a /dev/sdc`
+
+sg3_utils - is a package of utilities that send SCSI commands to the given DEVICE via a SCSI pass through interface provided by the host operating system. <br>
+`https://sg.danny.cz/sg/sg3_utils.html`

@@ -10,6 +10,20 @@ run:
 pick the dirve you want to convert from 512 to 4096 <br>
 `wdckit format -b 4096 --fastformat disk1` # Replace disk1 with your disk from the output on `wdckit s` <br>
 <br>
+Also can try Hugo:
+Install Hugo
+Locate hugo.exe `C:\Program Files\WDC\HUGO\bin\hugo.exe`
+run: <br>
+`hugo.exe s --device` <br>
+<br>
+next: <br>
+`hugo format -g \\.\PhysicalDrive1 -b 4096 --fastformat -n max` <br>
+FYI. a failed format doesn't necessarily mean the new sectors did not update to 4096 <br>
+<br>
+Also can try WD Format Utility:
+`https://downloads.wdc.com/wdapp/WD_Quick_Formatter_2.0.0.65.zip` <br>
+`https://support-en.wd.com/app/answers/detailweb/a_id/16241` <br>
+
 ## Seagate 512 to 4096 <br>
 Download SeaChest tools: SeaChest_Info_x64_windows.exe -s <br> 
 https://github.com/Seagate/ToolBin/blob/master/SeaChest/Info/v2.5.0/Windows/SeaChest_Info_x64_windows.exe <br>

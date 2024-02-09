@@ -35,7 +35,7 @@ run: <br>
 `SeaChest_Lite_x64_windows.exe -d PD2 --setSectorSize 4096 --confirm this-will-erase-data` # Will try to convert from 512 to 4096 <br>
 <br>
 ## Other Commands tools: <br>
-### hdparms:
+### hdparms
 Linux tool allowing users to view and change the SATA/IDE device parameters. Stands for "Hard Disk Parameters".  <br>
 `Examples (for first ATA/SATA drive):` <br>
 `hdparm -I hda              Show disk identity, features, and current settings` <br>
@@ -49,7 +49,7 @@ Linux tool allowing users to view and change the SATA/IDE device parameters. Sta
 `Use 'hdb', 'hdc',... for second, third, ... ATA/SATA drive.` <br>
 `See man page (hdparm.8.*) for further info.` <br>
  
-### smartctl: <br>
+### smartctl <br>
 Linux tool used to control/monitor storage using (SMART) system. `smartctl [option] /dev/drive` <br>
 See if your hard disk supports S.M.A.R.T.: <br>
 `sudo smartctl -i /dev/sdc` <br>

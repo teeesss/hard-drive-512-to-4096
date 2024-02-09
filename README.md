@@ -1,7 +1,7 @@
 #### Format Western Digital Drives from 512 to 4096
 Download wdckit (either from Western Digital or find online)
-`wdckit s`
-`wdckit format -b x --fastformat diskX`
+`wdckit s` <br>
+`wdckit format -b x --fastformat diskX` <br>
 https://support-en.wd.com/app/answers/detailweb/a_id/50708
 
 run:

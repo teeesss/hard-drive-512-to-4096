@@ -35,7 +35,7 @@ run: <br>
 `SeaChest_Lite_x64_windows.exe -d PD2 --setSectorSize 4096 --confirm this-will-erase-data` # Will try to convert from 512 to 4096 <br>
 <br>
 ## Other Commands tools: <br>
-hdparms: <br>
+### hdparms:
 Linux tool allowing users to view and change the SATA/IDE device parameters. Stands for "Hard Disk Parameters".  <br>
 `Examples (for first ATA/SATA drive):` <br>
 `hdparm -I hda              Show disk identity, features, and current settings` <br>
@@ -48,8 +48,8 @@ Linux tool allowing users to view and change the SATA/IDE device parameters. Sta
 `hdparm --security-freeze hda    Freeze security settings` <br>
 `Use 'hdb', 'hdc',... for second, third, ... ATA/SATA drive.` <br>
 `See man page (hdparm.8.*) for further info.` <br>
- <br>
-smartctl: <br>
+ 
+### smartctl: <br>
 Linux tool used to control/monitor storage using (SMART) system. `smartctl [option] /dev/drive` <br>
 See if your hard disk supports S.M.A.R.T.: <br>
 `sudo smartctl -i /dev/sdc` <br>
@@ -60,6 +60,7 @@ In case SMART support is available, but for some reason is not activated, try us
 Viewing the SMART Attributes <br>
 To display the SMART attributes of the hard disk, perform the following command: <br>
 `sudo smartctl -a /dev/sdc` <br>
- <br>
-sg3_utils - is a package of utilities that send SCSI commands to the given DEVICE via a SCSI pass through interface provided by the host operating system. <br> <br>
+ 
+### sg3_utils <br>
+Package of utilities that send SCSI commands to the given DEVICE via a SCSI pass through interface provided by the host operating system. <br>
 `https://sg.danny.cz/sg/sg3_utils.html` <br>

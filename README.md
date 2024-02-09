@@ -20,7 +20,7 @@ next: <br>
 `hugo format -g \\.\PhysicalDrive1 -b 4096 --fastformat -n max` <br>
 FYI. a failed format doesn't necessarily mean the new sectors did not update to 4096 <br>
 <br>
-Also can try WD Format Utility:
+## WD Format Utility, yet another option to try <br>
 `https://downloads.wdc.com/wdapp/WD_Quick_Formatter_2.0.0.65.zip` <br>
 `https://support-en.wd.com/app/answers/detailweb/a_id/16241` <br>
 

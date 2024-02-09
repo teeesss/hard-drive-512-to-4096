@@ -10,9 +10,9 @@ run:
 pick the dirve you want to convert from 512 to 4096 <br>
 `wdckit format -b 4096 --fastformat disk1` # Replace disk1 with your disk from the output on `wdckit s` <br>
 <br>
-Also can try Hugo:
-Install Hugo
-Locate hugo.exe `C:\Program Files\WDC\HUGO\bin\hugo.exe`
+## Hugo - Is another option you can try <br>
+Install Hugo <br>
+Locate hugo.exe `C:\Program Files\WDC\HUGO\bin\hugo.exe` <br>
 run: <br>
 `hugo.exe s --device` <br>
 <br>

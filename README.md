@@ -10,7 +10,7 @@ run:
 pick the dirve you want to convert from 512 to 4096 <br>
 `wdckit format -b 4096 --fastformat disk1` # Replace disk1 with your disk from the output on `wdckit s` <br>
 
-## Hugo - Is another option you can try <br>
+## Hugo - Another option you can try <br>
 Install Hugo <br>
 Locate hugo.exe `C:\Program Files\WDC\HUGO\bin\hugo.exe` <br>
 run: <br>
@@ -24,7 +24,7 @@ FYI. a failed format doesn't necessarily mean the new sectors did not update to 
 `https://downloads.wdc.com/wdapp/WD_Quick_Formatter_2.0.0.65.zip` <br>
 `https://support-en.wd.com/app/answers/detailweb/a_id/16241` <br>
 
-## Seagate 512 to 4096 <br>
+## Seagate SeaChest Lite - 512 to 4096 <br>
 Download SeaChest tools: SeaChest_Info_x64_windows.exe -s <br> 
 https://github.com/Seagate/ToolBin/blob/master/SeaChest/Info/v2.5.0/Windows/SeaChest_Info_x64_windows.exe <br>
 https://github.com/Seagate/ToolBin/blob/master/SeaChest/Lite/v1.9.2/Windows/SeaChest_Lite_x64_windows.exe <br>
@@ -48,6 +48,12 @@ Linux tool allowing users to view and change the SATA/IDE device parameters. Sta
 `hdparm --security-freeze hda    Freeze security settings` <br>
 `Use 'hdb', 'hdc',... for second, third, ... ATA/SATA drive.` <br>
 `See man page (hdparm.8.*) for further info.` <br>
+
+## Seagate openSeaChest_FormatUnit - 512 to 4096 <br>
+`wget https://github.com/Seagate/openSeaChest/releases/download/v20.02.28/openSeaChest_FormatUnit` <br>
+`chmod +x openSeaChest_FormatUnit` <br>
+` ./openSeaChest_FormatUnit -s` # Fimd your drive <br>
+`sudo ./openSeaChest_FormatUnit -d /dev/sdc --formatUnit 4096 --fastFormat 1 --confirm this-will-erase-data --disableImmediateResponse` <br>
  
 ### smartctl <br>
 Linux tool used to control/monitor storage using (SMART) system. `smartctl [option] /dev/drive` <br>

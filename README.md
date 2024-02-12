@@ -13,11 +13,9 @@ pick the dirve you want to convert from 512 to 4096 <br>
 ## Hugo - Another option you can try <br>
 Install Hugo <br>
 Locate hugo.exe `C:\Program Files\WDC\HUGO\bin\hugo.exe` <br>
-run: <br>
-`hugo.exe s --device` <br>
+run: `hugo.exe s --device` <br>
 <br>
-next: <br>
-`hugo format -g \\.\PhysicalDrive1 -b 4096 --fastformat -n max` <br>
+next: `hugo format -g \\.\PhysicalDrive1 -b 4096 --fastformat -n max` <br>
 FYI. a failed format doesn't necessarily mean the new sectors did not update to 4096 <br>
 
 ## WD Format Utility, yet another option to try <br>

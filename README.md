@@ -31,7 +31,6 @@ https://github.com/Seagate/ToolBin/blob/master/SeaChest/Lite/v1.9.2/Windows/SeaC
 
 run: <br>
 `SeaChest_Info_x64_windows.exe -s`  # Will show output of drives <br>
-<br>
 `SeaChest_Lite_x64_windows.exe -d PD2 --setSectorSize 4096 --confirm this-will-erase-data` # Will try to convert from 512 to 4096 <br>
 
 ## Seagate openSeaChest_FormatUnit - 512 to 4096 <br>

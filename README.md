@@ -32,7 +32,7 @@ run: `SeaChest_Info_x64_windows.exe -s`  # Will show output of drives <br>
 ## Seagate openSeaChest_FormatUnit - 512 to 4096 <br>
 `wget https://github.com/Seagate/openSeaChest/releases/download/v20.02.28/openSeaChest_FormatUnit` <br>
 `chmod +x openSeaChest_FormatUnit` <br>
-` ./openSeaChest_FormatUnit -s` # Fimd your drive <br>
+`./openSeaChest_FormatUnit -s` # Find your drive <br>
 `sudo ./openSeaChest_FormatUnit -d /dev/sdc --formatUnit 4096 --fastFormat 1 --confirm this-will-erase-data --disableImmediateResponse` <br>
 
 ## Other Commands tools: <br>

@@ -33,7 +33,13 @@ run: <br>
 `SeaChest_Info_x64_windows.exe -s`  # Will show output of drives <br>
 <br>
 `SeaChest_Lite_x64_windows.exe -d PD2 --setSectorSize 4096 --confirm this-will-erase-data` # Will try to convert from 512 to 4096 <br>
-<br>
+
+## Seagate openSeaChest_FormatUnit - 512 to 4096 <br>
+`wget https://github.com/Seagate/openSeaChest/releases/download/v20.02.28/openSeaChest_FormatUnit` <br>
+`chmod +x openSeaChest_FormatUnit` <br>
+` ./openSeaChest_FormatUnit -s` # Fimd your drive <br>
+`sudo ./openSeaChest_FormatUnit -d /dev/sdc --formatUnit 4096 --fastFormat 1 --confirm this-will-erase-data --disableImmediateResponse` <br>
+
 ## Other Commands tools: <br>
 ### hdparms
 Linux tool allowing users to view and change the SATA/IDE device parameters. Stands for "Hard Disk Parameters".  <br>
@@ -49,12 +55,6 @@ Linux tool allowing users to view and change the SATA/IDE device parameters. Sta
 `Use 'hdb', 'hdc',... for second, third, ... ATA/SATA drive.` <br>
 `See man page (hdparm.8.*) for further info.` <br>
 
-## Seagate openSeaChest_FormatUnit - 512 to 4096 <br>
-`wget https://github.com/Seagate/openSeaChest/releases/download/v20.02.28/openSeaChest_FormatUnit` <br>
-`chmod +x openSeaChest_FormatUnit` <br>
-` ./openSeaChest_FormatUnit -s` # Fimd your drive <br>
-`sudo ./openSeaChest_FormatUnit -d /dev/sdc --formatUnit 4096 --fastFormat 1 --confirm this-will-erase-data --disableImmediateResponse` <br>
- 
 ### smartctl <br>
 Linux tool used to control/monitor storage using (SMART) system. `smartctl [option] /dev/drive` <br>
 See if your hard disk supports S.M.A.R.T.: <br>

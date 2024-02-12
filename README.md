@@ -1,5 +1,5 @@
 ## Western Digital Drives from 512 to 4096 <br>
-Download wdckit (either from Western Digital or find online) https://files.hddguru.com/index.php?action=downloadfile&filename=wdckit-2.19.1.zip&directory=Software/Western%20Digital&
+Download wdckit (either from Western Digital or find online) https://files.hddguru.com/index.php?action=downloadfile&filename=wdckit-2.19.1.zip&directory=Software/Western%20Digital& <br>
 `wdckit s` <br>
 `wdckit format -b x --fastformat diskX` <br>
 https://support-en.wd.com/app/answers/detailweb/a_id/50708 <br>

@@ -64,4 +64,4 @@ To display the SMART attributes of the hard disk, perform the following command:
  
 ### sg3_utils <br>
 Package of utilities that send SCSI commands to the given DEVICE via a SCSI pass through interface provided by the host operating system. <br>
-`https://sg.danny.cz/sg/sg3_utils.html` <br>
+https://sg.danny.cz/sg/sg3_utils.html <br>
